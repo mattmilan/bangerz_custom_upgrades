@@ -17,18 +17,33 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4      
-          
-      - name: Transfer bangerz_upgrades.txt to server via SFTP
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
-          username: bangerz
-          key: ${{ secrets.SFTP_PRIVATE_KEY }}
-          source: "bangerz_upgrades.txt"
-          target: "/items"
-          debug: true
-          overwrite: true
+        
+      - name: Install SSH client
+        run: sudo apt-get update && sudo apt-get install -y openssh-client
+      
+      - name: Verbose SCP upload bangerz_upgrades.txt
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_KEY: ${{ secrets.SFTP_PRIVATE_KEY }}
+        run: |
+          set -x
+          echo "$SFTP_KEY" > private_key.pem
+          chmod 600 private_key.pem
+          # -o option skips host key check for easier debugging; remove for production
+          scp -vvv -i private_key.pem -P "$SFTP_PORT" -o StrictHostKeyChecking=no bangerz_upgrades.txt bangerz@"$SFTP_HOST":./
+          rm -f private_key.pem
+      # - name: Transfer bangerz_upgrades.txt to server via SFTP
+      #   uses: appleboy/scp-action@v0.1.7
+      #   with:
+      #     host: ${{ secrets.SFTP_HOST }}
+      #     port: ${{ secrets.SFTP_PORT }}
+      #     username: bangerz
+      #     key: ${{ secrets.SFTP_PRIVATE_KEY }}
+      #     source: "bangerz_upgrades.txt"
+      #     target: "/items"
+      #     debug: true
+      #     overwrite: true
 
       - name: Upload bangerz_upgrades.txt as downloadable artifact
         uses: actions/upload-artifact@v4
