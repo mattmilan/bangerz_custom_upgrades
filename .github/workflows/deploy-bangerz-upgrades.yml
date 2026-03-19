@@ -16,20 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Print environment and test SSH
-        run: |
-          whoami
-          env
-          ssh -V
-          echo "$SFTP_PRIVATE_KEY" > /tmp/testkey
-          chmod 600 /tmp/testkey          
-          sftp -o StrictHostKeyChecking=no -i /tmp/testkey -p $SFTP_PORT bangerz@$SFTP_HOST <<< $'put /tmp/testkey ~/items\nbye'
-        env:
-          SFTP_PRIVATE_KEY: ${{ secrets.SFTP_PRIVATE_KEY }}
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_PORT: ${{ secrets.SFTP_PORT }}          
+        uses: actions/checkout@v4      
           
       - name: Transfer bangerz_upgrades.txt to server via SFTP
         uses: appleboy/scp-action@v0.1.7
