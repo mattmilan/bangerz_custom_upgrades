@@ -1,6 +1,7 @@
 name: Deploy bangerz_upgrades.txt
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
