@@ -25,12 +25,12 @@ jobs:
           ssh -V
           echo "$SFTP_PRIVATE_KEY" > /tmp/testkey
           chmod 600 /tmp/testkey          
-          sftp -o StrictHostKeyChecking=no -i /tmp/testkey -p $SFTP_PORT bangerz@$SFTP_HOST
+          sftp -o StrictHostKeyChecking=no -i /tmp/testkey -p $SFTP_PORT bangerz@$SFTP_HOST <<< $'put /tmp/testkey ~/items\nbye'
         env:
           SFTP_PRIVATE_KEY: ${{ secrets.SFTP_PRIVATE_KEY }}
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_PORT: ${{ secrets.SFTP_PORT }}
-    
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}          
+          
       - name: Transfer bangerz_upgrades.txt to server via SFTP
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -39,7 +39,7 @@ jobs:
           username: bangerz
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           source: "bangerz_upgrades.txt"
-          target: "~/items/"
+          target: "~/items"
           debug: true
 
       - name: Upload bangerz_upgrades.txt as downloadable artifact
