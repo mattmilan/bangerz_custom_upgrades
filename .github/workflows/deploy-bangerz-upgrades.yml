@@ -24,8 +24,8 @@ jobs:
           env
           ssh -V
           echo "$SFTP_PRIVATE_KEY" > /tmp/testkey
-          chmod 600 /tmp/testkey
-          ssh -o StrictHostKeyChecking=no -i /tmp/testkey -p $SFTP_PORT bangerz@$SFTP_HOST 'echo SUCCESS'
+          chmod 600 /tmp/testkey          
+          sftp -o StrictHostKeyChecking=no -i /tmp/testkey -p $SFTP_PORT bangerz@$SFTP_HOST
         env:
           SFTP_PRIVATE_KEY: ${{ secrets.SFTP_PRIVATE_KEY }}
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
