@@ -18,6 +18,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Print environment and test SSH
+        run: |
+          whoami
+          env
+          ssh -V
+          echo "$SFTP_PRIVATE_KEY" > /tmp/testkey
+          chmod 600 /tmp/testkey
+          ssh -o StrictHostKeyChecking=no -i /tmp/testkey -p $SFTP_PORT bangerz@$SFTP_HOST 'echo SUCCESS'
+        env:
+          SFTP_PRIVATE_KEY: ${{ secrets.SFTP_PRIVATE_KEY }}
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+    
       - name: Transfer bangerz_upgrades.txt to server via SFTP
         uses: appleboy/scp-action@v0.1.7
         with:
