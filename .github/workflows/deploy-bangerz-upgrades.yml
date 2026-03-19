@@ -21,6 +21,7 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
           username: bangerz
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           source: "bangerz_upgrades.txt"
