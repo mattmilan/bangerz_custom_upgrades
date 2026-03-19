@@ -27,6 +27,7 @@ jobs:
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           source: "bangerz_upgrades.txt"
           target: "~/items/"
+          debug: true
 
       - name: Upload bangerz_upgrades.txt as downloadable artifact
         uses: actions/upload-artifact@v4
