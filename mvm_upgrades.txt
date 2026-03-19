@@ -1,0 +1,293 @@
+"CMannVsMachineUpgradeDatabase"
+{
+	"PlayerUpgrades"
+	{
+		"1"
+		{
+			"ui_name"	"Recharge Time"
+			"attribute"	"lose overheal on hit penalty"
+			"description_token"	"TF_Upgrade_RemoveOverhealHitPenalty_Desc"
+			"icon"		"coin_upgrade_lose_overheal"
+			"cost"		400
+			"increment"	1
+			"Cap"		1
+			"unlimited"	1
+		}
+		"2"
+		{
+			"ui_name"	"Move Speed Bonus"
+			"attribute"	"move speed bonus"
+			"description_token"	"TF_Upgrade_MoveSpeed_Desc"
+			"icon"		"coin_upgrade_move_speed"
+			"cost"		200
+			"increment"	0.05
+			"Cap"		0.30
+		}
+		"3"
+		{
+			"ui_name"	"Health Regen"
+			"attribute"	"health regen"
+			"description_token"	"TF_Upgrade_HealthRegen_Desc"
+			"icon"		"coin_upgrade_regen"
+			"cost"		100
+			"increment"	2
+			"Cap"		20
+		}
+		"4"
+		{
+			"ui_name"	"Max Health Bonus"
+			"attribute"	"max health additive bonus"
+			"description_token"	"TF_Upgrade_MaxHealth_Desc"
+			"icon"		"coin_upgrade_health"
+			"cost"		200
+			"increment"	25
+			"Cap"		100
+		}
+		"5"
+		{
+			"ui_name"	"Bullet Resistance"
+			"attribute"	"damage force reduction"
+			"description_token"	"TF_Upgrade_BulletResist_Desc"
+			"icon"		"coin_upgrade_resist_bullet"
+			"cost"		200
+			"increment"	0.10
+			"Cap"		0.25
+		}
+		"6"
+		{
+			"ui_name"	"Blast Resistance"
+			"attribute"	"blast damage taken reduced"
+			"description_token"	"TF_Upgrade_BlastResist_Desc"
+			"icon"		"coin_upgrade_resist_blast"
+			"cost"		200
+			"increment"	0.10
+			"Cap"		0.25
+		}
+		"7"
+		{
+			"ui_name"	"Fire Resistance"
+			"attribute"	"fire damage reduction"
+			"description_token"	"TF_Upgrade_FireResist_Desc"
+			"icon"		"coin_upgrade_resist_fire"
+			"cost"		200
+			"increment"	0.10
+			"Cap"		0.25
+		}
+		"8"
+		{
+			"ui_name"	"Canteen Specialist"
+			"attribute"	"canteen specialist"
+			"description_token"	"TF_Upgrade_CanteenSpecialist_Desc"
+			"icon"		"coin_upgrade_canteen_specialist"
+			"cost"		200
+			"increment"	1
+			"Cap"		3
+		}
+	}
+	"ItemUpgrades"
+	{
+		"1"
+		{
+			"ui_name"	"Damage Bonus"
+			"attribute"	"damage bonus"
+			"description_token"	"TF_Upgrade_DamageBonus_Desc"
+			"icon"		"coin_upgrade_damage"
+			"cost"		200
+			"increment"	0.15
+			"Cap"		0.75
+		}
+		"2"
+		{
+			"ui_name"	"Clip Size Bonus"
+			"attribute"	"clip size bonus upgrade"
+			"description_token"	"TF_Upgrade_ClipSize_Desc"
+			"icon"		"coin_upgrade_clip_size"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		1.0
+		}
+		"3"
+		{
+			"ui_name"	"Reload Time Penalty Remove"
+			"attribute"	"faster reload rate"
+			"description_token"	"TF_Upgrade_ReloadSpeed_Desc"
+			"icon"		"coin_upgrade_reload_speed"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+		"4"
+		{
+			"ui_name"	"Fire Rate Bonus"
+			"attribute"	"fire rate bonus"
+			"description_token"	"TF_Upgrade_FireRate_Desc"
+			"icon"		"coin_upgrade_fire_rate"
+			"cost"		200
+			"increment"	0.15
+			"Cap"		0.60
+		}
+		"5"
+		{
+			"ui_name"	"Projectile Speed"
+			"attribute"	"projectile speed increased"
+			"description_token"	"TF_Upgrade_ProjectileSpeed_Desc"
+			"icon"		"coin_upgrade_projectile_speed"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		1.0
+		}
+		"6"
+		{
+			"ui_name"	"Blast Radius Penalty Remove"
+			"attribute"	"Blast radius increased"
+			"description_token"	"TF_Upgrade_BlastRadius_Desc"
+			"icon"		"coin_upgrade_blast_radius"
+			"cost"		200
+			"increment"	0.20
+			"Cap"		0.60
+		}
+		"7"
+		{
+			"ui_name"	"Ammo Capacity"
+			"attribute"	"max ammo primary increased"
+			"description_token"	"TF_Upgrade_AmmoCapacity_Desc"
+			"icon"		"coin_upgrade_ammo"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+		"8"
+		{
+			"ui_name"	"Charge Time Penalty Remove"
+			"attribute"	"charge recharge rate increased"
+			"description_token"	"TF_Upgrade_ChargeTime_Desc"
+			"icon"		"coin_upgrade_charge_time"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+		"9"
+		{
+			"ui_name"	"Crit on Headshot"
+			"attribute"	"crit vs burning players"
+			"description_token"	"TF_Upgrade_CritHeadshot_Desc"
+			"icon"		"coin_upgrade_crit_headshot"
+			"cost"		500
+			"increment"	1
+			"Cap"		1
+			"unlimited"	1
+		}
+		"10"
+		{
+			"ui_name"	"Overheal for Kills"
+			"attribute"	"overheal for kills"
+			"description_token"	"TF_Upgrade_OverhealKills_Desc"
+			"icon"		"coin_upgrade_overheal"
+			"cost"		300
+			"increment"	1
+			"Cap"		1
+			"unlimited"	1
+		}
+		"11"
+		{
+			"ui_name"	"Deploy Time Reduction"
+			"attribute"	"faster weapon switch"
+			"description_token"	"TF_Upgrade_DeployTime_Desc"
+			"icon"		"coin_upgrade_deploy_time"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.50
+		}
+		"12"
+		{
+			"ui_name"	"Uber Charging Rate"
+			"attribute"	"ubercharge rate bonus"
+			"description_token"	"TF_Upgrade_UberRate_Desc"
+			"icon"		"coin_upgrade_uber_rate"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		1.0
+		}
+		"13"
+		{
+			"ui_name"	"Uber Duration"
+			"attribute"	"uber duration bonus"
+			"description_token"	"TF_Upgrade_UberDuration_Desc"
+			"icon"		"coin_upgrade_uber_duration"
+			"cost"		200
+			"increment"	1
+			"Cap"		5
+		}
+		"14"
+		{
+			"ui_name"	"Heal Rate Bonus"
+			"attribute"	"healing mastery"
+			"description_token"	"TF_Upgrade_HealRate_Desc"
+			"icon"		"coin_upgrade_heal_rate"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+		"15"
+		{
+			"ui_name"	"Teleporter Recharge"
+			"attribute"	"teleporter recharge rate increased"
+			"description_token"	"TF_Upgrade_TeleRecharge_Desc"
+			"icon"		"coin_upgrade_tele_recharge"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+		"16"
+		{
+			"ui_name"	"Sentry Gun Range"
+			"attribute"	"sentry range"
+			"description_token"	"TF_Upgrade_SentryRange_Desc"
+			"icon"		"coin_upgrade_sentry_range"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.50
+		}
+		"17"
+		{
+			"ui_name"	"Building Health Bonus"
+			"attribute"	"engie building health bonus"
+			"description_token"	"TF_Upgrade_BuildingHealth_Desc"
+			"icon"		"coin_upgrade_building_health"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+		"18"
+		{
+			"ui_name"	"Backstab"
+			"attribute"	"fire rate penalty"
+			"description_token"	"TF_Upgrade_Backstab_Desc"
+			"icon"		"coin_upgrade_backstab"
+			"cost"		400
+			"increment"	1
+			"Cap"		1
+			"unlimited"	1
+		}
+		"19"
+		{
+			"ui_name"	"Cloak Duration"
+			"attribute"	"cloak duration bonus"
+			"description_token"	"TF_Upgrade_CloakDuration_Desc"
+			"icon"		"coin_upgrade_cloak_duration"
+			"cost"		200
+			"increment"	1
+			"Cap"		4
+		}
+		"20"
+		{
+			"ui_name"	"Cloak Regen Rate"
+			"attribute"	"cloak regen rate"
+			"description_token"	"TF_Upgrade_CloakRegen_Desc"
+			"icon"		"coin_upgrade_cloak_regen"
+			"cost"		200
+			"increment"	0.25
+			"Cap"		0.75
+		}
+	}
+}
