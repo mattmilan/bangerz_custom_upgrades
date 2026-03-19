@@ -1,0 +1,44 @@
+name: Deploy bangerz_upgrades.txt
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "bangerz_upgrades.txt"
+
+jobs:
+  deploy:
+    permissions:
+      contents: read
+    name: SFTP transfer and local download
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Transfer bangerz_upgrades.txt to server via SFTP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          username: bangerz
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          source: "bangerz_upgrades.txt"
+          target: "~/items/"
+
+      - name: Upload bangerz_upgrades.txt as downloadable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bangerz_upgrades
+          path: bangerz_upgrades.txt
+          retention-days: 30
+
+      - name: Notify editor about download
+        run: |
+          echo "✅ bangerz_upgrades.txt has been deployed to the server."
+          echo ""
+          echo "📥 To download your copy locally:"
+          echo "   1. Go to the Actions tab in this repository."
+          echo "   2. Click on this workflow run."
+          echo "   3. Scroll down to the Artifacts section."
+          echo "   4. Download the 'bangerz_upgrades' artifact."

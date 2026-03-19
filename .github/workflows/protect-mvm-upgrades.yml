@@ -1,0 +1,19 @@
+name: Protect mvm_upgrades.txt
+
+on:
+  pull_request:
+    paths:
+      - "mvm_upgrades.txt"
+
+jobs:
+  block-changes:
+    permissions: {}
+    name: Block changes to mvm_upgrades.txt
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail – mvm_upgrades.txt must not be modified
+        run: |
+          echo "❌ Changes to mvm_upgrades.txt are not allowed."
+          echo "   This file is the original, unmodified TF2 MvM upgrade definitions."
+          echo "   Make your edits in bangerz_upgrades.txt instead."
+          exit 1
