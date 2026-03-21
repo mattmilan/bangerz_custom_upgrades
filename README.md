@@ -23,6 +23,7 @@ This should be the end of it, but for some reason, TF2 needs this file in two pl
 
 > #### ENSURE you delete your local upgrades file before `retry` or you won't have the latest changes
 > `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\download\scripts\items\bangerz_upgrades.txt`
+> `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2 Classified\tf2classified\download\scripts\items\bangerz_upgrades.txt`
 
 - <Github> [Update](https://github.com/mattmilan/bangerz_custom_upgrades/edit/master/bangerz_upgrades.txt) `bangerz_upgrades.txt` and commit
 - <Github> Wait for the [github action](https://github.com/mattmilan/bangerz_custom_upgrades/actions) to complete (~10 seconds)
