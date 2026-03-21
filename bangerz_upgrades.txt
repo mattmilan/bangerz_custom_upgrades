@@ -1,5 +1,6 @@
 // Assign attribs to groups
 // Assign items to groups
+// Adding this to test action
 
 // upgrades.txt
 "upgrades"
