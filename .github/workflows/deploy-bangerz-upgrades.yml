@@ -18,28 +18,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4      
 
-      # - name: Prepare SCP Connection
-      #   run: |
-      #     mkdir -v -m 700 $HOME/.ssh
-      #     ssh-keyscan -p ${{ secrets.SFTP_PORT }} -H ${{ secrets.SFTP_HOST }} > $HOME/.ssh/known_hosts
-      #     echo "${{ secrets.SFTP_PRIVATE_KEY }}" > $HOME/.ssh/id_rsa
-      #     chmod 400 $HOME/.ssh/id_rsa
+      - name: Prepare SCP Connection
+        run: |
+          mkdir -v -m 700 $HOME/.ssh
+          ssh-keyscan -p ${{ secrets.SFTP_PORT }} -H ${{ secrets.SFTP_HOST }} > $HOME/.ssh/known_hosts
+          echo "${{ secrets.SFTP_PRIVATE_KEY }}" > $HOME/.ssh/id_rsa
+          chmod 400 $HOME/.ssh/id_rsa
 
-      # - name: Perform SCP
-      #   run: |
-      #     scp -P ${{ secrets.SFTP_PORT }} bangerz_upgrades.txt bangerz@${{ secrets.SFTP_HOST }}:items
+      - name: Perform SCP
+        run: |
+          scp -P ${{ secrets.SFTP_PORT }} bangerz_upgrades.txt bangerz@${{ secrets.SFTP_HOST }}:items
 
       # This connects succesfully but fails to transfer the file and gives no details regardless of verbosity
-      - name: Transfer bangerz_upgrades.txt to server via SFTP
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
-          username: bangerz
-          key: ${{ secrets.SFTP_PRIVATE_KEY }}
-          source: "bangerz_upgrades.txt"
-          target: "items"
-          overwrite: true
+      # - name: Transfer bangerz_upgrades.txt to server via SFTP
+      #   uses: appleboy/scp-action@v0.1.7
+      #   with:
+      #     host: ${{ secrets.SFTP_HOST }}
+      #     port: ${{ secrets.SFTP_PORT }}
+      #     username: bangerz
+      #     key: ${{ secrets.SFTP_PRIVATE_KEY }}
+      #     source: "bangerz_upgrades.txt"
+      #     target: "items"
+      #     overwrite: true
 
       - name: Upload bangerz_upgrades.txt as downloadable artifact
         uses: actions/upload-artifact@v4
