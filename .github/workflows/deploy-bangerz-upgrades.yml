@@ -25,9 +25,13 @@ jobs:
           echo "${{ secrets.SFTP_PRIVATE_KEY }}" > $HOME/.ssh/id_rsa
           chmod 400 $HOME/.ssh/id_rsa
 
-      - name: Perform SCP
+      - name: Perform SCP (TF2)
         run: |
           scp -P ${{ secrets.SFTP_PORT }} bangerz_upgrades.txt bangerz@${{ secrets.SFTP_HOST }}:items
+
+      - name: Perform SCP (TF2C)
+        run: |
+          scp -P ${{ secrets.SFTP_PORT }} bangerz_upgrades.txt bangerz@${{ secrets.SFTP_HOST }}:tf2c_items
 
       # This connects succesfully but fails to transfer the file and gives no details regardless of verbosity
       # - name: Transfer bangerz_upgrades.txt to server via SFTP
