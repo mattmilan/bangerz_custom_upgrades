@@ -540,9 +540,9 @@
 		{
 			"attribute"	"increased jump height"
 			"icon"		"achievements/tf_scout_double_jumps"
-			"increment"	"0.2"
-			"cap"		"1.6"
-			"cost"		"100"
+			"increment"	"0.5"
+			"cap"		"4.0"
+			"cost"		"2"
 		}
 	}
 }
