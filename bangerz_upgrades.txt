@@ -482,11 +482,11 @@
 	{
 		"1"
 		{
-			"attribute"	"dmg taken from fire reduced"
-			"icon"		"mvm/upgradeicons/upgrade_resistance_fire"
-			"increment"	"-0.25"			// 15% reduction
-			"cap"		"0.25"			// 75% reduction max (.41 because of float rounding when comparing)
-			"cost"		"150"
+			"attribute"	"healing received bonus"
+			"icon"		"achievements/tf_pyro_burn_medicpair"
+			"increment"	"1"
+			"cap"		"3"
+			"cost"		"5"
 		}
 		"2"
 		{
