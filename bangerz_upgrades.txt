@@ -484,7 +484,7 @@
 		{
 			"attribute"	"healing received bonus"
 			"icon"		"achievements/tf_pyro_burn_medicpair"
-			"increment"	"1"
+			"increment"	"0.25"
 			"cap"		"3"
 			"cost"		"5"
 		}
