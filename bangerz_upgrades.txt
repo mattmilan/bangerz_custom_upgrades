@@ -18,7 +18,7 @@
 			"icon"		"achievements/tf_demoman_kill_x_with_directpipe"
 			"increment"	"0.25"				// percent
 			"cap"		"2.0"				// percent
-			"cost"		"400"				// first tier points/credits cost
+			"cost"		"4"				// first tier points/credits cost
 		}
 		"1.1"
 		{
