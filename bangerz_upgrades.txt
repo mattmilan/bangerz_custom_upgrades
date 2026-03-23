@@ -474,6 +474,14 @@
 			"cap"		"1"			// 
 			"cost"		"400"
 		}
+		"58"
+		{
+			"attribute"	"Projectile range increased"
+			"icon"		"achievements/tf_soldier_kill_airborne_target_while_airborne"
+			"increment"	"1"			// 
+			"cap"		"3"			// 
+			"cost"		"5"
+		}
 	}
 	
 	// PLAYER UPGRADES
