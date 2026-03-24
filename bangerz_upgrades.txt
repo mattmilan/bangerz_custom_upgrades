@@ -476,8 +476,8 @@
 		}
 		"58"
 		{
-			"attribute"	"Projectile range increased"
-			"icon"		"achievements/tf_soldier_kill_airborne_target_while_airborne"
+			"attribute"	"sapper damage bonus"
+			"icon"		"achievements/tf_engineer_remove_sapper_long_dist"
 			"increment"	"1"			// 
 			"cap"		"3"			// 
 			"cost"		"5"
