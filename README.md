@@ -1,4 +1,6 @@
 # Custom Upgrades Testing
+## Server
+[RTU DEV] - `70.9.108.34:27015`
 
 ## Purpose
 
