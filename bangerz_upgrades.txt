@@ -476,11 +476,11 @@
 		}
 		"58"
 		{
-			"attribute"	"sapper damage leaches health"
-			"icon"		"achievements/tf_engineer_remove_sapper_long_dist"
-			"increment"	"1"			// 
-			"cap"		"5"			// 
-			"cost"		"5"
+			"attribute"	"aiming knockback resistance"
+			"icon"		"achievements/tf_pyro_burn_medicpair"
+			"increment"	"0.25"
+			"cap"		"2"
+			"cost"		"300"
 		}
 		"59"
 		{
