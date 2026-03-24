@@ -500,7 +500,7 @@
 		{
 			"attribute"	"aiming knockback resistance"
 			"icon"		"achievements/tf_pyro_burn_medicpair"
-			"increment"	"0.5"
+			"increment"	"0.25"
 			"cap"		"2"
 			"cost"		"300"
 		}
@@ -557,7 +557,7 @@
 			"attribute"	"increased jump height"
 			"icon"		"achievements/tf_scout_double_jumps"
 			"increment"	"0.2"
-			"cap"		"1.75"
+			"cap"		"1.6"
 			"cost"		"100"
 		}
 	}
