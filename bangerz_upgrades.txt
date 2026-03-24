@@ -498,10 +498,10 @@
 	{
 		"1"
 		{
-			"attribute"	"healing received bonus"
+			"attribute"	"aiming knockback resistance"
 			"icon"		"achievements/tf_pyro_burn_medicpair"
-			"increment"	"0.25"
-			"cap"		"1.5"
+			"increment"	"1"
+			"cap"		"3"
 			"cost"		"300"
 		}
 		"2"
@@ -556,8 +556,8 @@
 		{
 			"attribute"	"increased jump height"
 			"icon"		"achievements/tf_scout_double_jumps"
-			"increment"	"0.3"
-			"cap"		"2"
+			"increment"	"0.2"
+			"cap"		"1.5"
 			"cost"		"100"
 		}
 	}
