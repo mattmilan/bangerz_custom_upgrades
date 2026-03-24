@@ -486,7 +486,7 @@
 		{
 		    "attribute" "dmg bonus vs buildings"
 			"icon"      "achievements/tf_engineer_dispenser_extinguish"
-			"increment" "0.25"
+			"increment" "-0.25"
 			"cap"       "1.5"
 			"cost"      "2"
 		}
