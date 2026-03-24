@@ -476,11 +476,11 @@
 		}
 		"58"
 		{
-			"attribute"	"aiming knockback resistance"
+			"attribute"	"stickybomb charge rate"
 			"icon"		"achievements/tf_pyro_burn_medicpair"
 			"increment"	"0.25"
 			"cap"		"2"
-			"cost"		"300"
+			"cost"		"100"
 		}
 		"59"
 		{
@@ -498,11 +498,11 @@
 	{
 		"1"
 		{
-			"attribute"	"aiming knockback resistance"
+			"attribute"	"ammo regen"
 			"icon"		"achievements/tf_pyro_burn_medicpair"
-			"increment"	"0.25"
-			"cap"		"2"
-			"cost"		"300"
+			"increment"	"0.5"
+			"cap"		"3"
+			"cost"		"100"
 		}
 		"2"
 		{
