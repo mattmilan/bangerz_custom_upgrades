@@ -476,10 +476,10 @@
 		}
 		"58"
 		{
-			"attribute"	"sapper damage bonus"
+			"attribute"	"sapper damage leaches health"
 			"icon"		"achievements/tf_engineer_remove_sapper_long_dist"
-			"increment"	"1"			// 
-			"cap"		"3"			// 
+			"increment"	"0.1"			// 
+			"cap"		"1"			// 
 			"cost"		"5"
 		}
 		"59"
