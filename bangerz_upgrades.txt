@@ -500,8 +500,8 @@
 		{
 			"attribute"	"ammo regen"
 			"icon"		"achievements/tf_heavy_assist_grind"
-			"increment"	"0.1"
-			"cap"		"0.5"
+			"increment"	"0.05"
+			"cap"		"0.25"
 			"cost"		"100"
 		}
 		"2"
