@@ -16,8 +16,8 @@
 			// Damage - Normal
 			"attribute"	"damage bonus"		// attrib to hook
 			"icon"		"achievements/tf_demoman_kill_x_with_directpipe"
-			"increment"	"0.25"				// percent
-			"cap"		"2.0"				// percent
+			"increment"	"0.5"				// percent
+			"cap"		"4.0"				// percent
 			"cost"		"4"				// first tier points/credits cost
 		}
 		"1.1"
