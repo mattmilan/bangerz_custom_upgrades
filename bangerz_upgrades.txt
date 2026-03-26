@@ -477,15 +477,15 @@
 		"58"
 		{
 			"attribute"	"stickybomb charge rate"
-			"icon"		"achievements/tf_pyro_burn_medicpair"
+			"icon"		"achievements/tf_pyro_double_ko"
 			"increment"	"-0.2"
 			"cap"		"0.2"
 			"cost"		"100"
 		}
 		"59"
 		{
-		    "attribute" "shot penetrate all players"
-			"icon"      "achievements/tf_engineer_dispenser_extinguish"
+		    "attribute" "fuse bonus"
+			"icon"      "achievements/tf_demoman_air_burst_kills"
 			"increment" "1"
 			"cap"       "1"
 			"cost"      "5"
