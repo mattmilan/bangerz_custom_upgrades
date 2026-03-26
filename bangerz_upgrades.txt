@@ -546,11 +546,11 @@
 		}
 		"7"
 		{
-			"attribute"	"dmg from melee increased"
-			"icon"		"achievements/tf_engineer_repair_team_grind"
-			"increment"	"-0.25"
-			"cap"		"0.25"
-			"cost"		"300"
+		    "attribute" "spunup_push_force_immunity"
+			"icon"      "achievements/tf_heavy_block_invuln_heavy"
+			"increment" "0.25"
+			"cap"       "1"
+			"cost"      "250"
 		}
 		"8"
 		{
