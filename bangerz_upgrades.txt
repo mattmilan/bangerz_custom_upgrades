@@ -522,10 +522,10 @@
 		}
 		"4"
 		{
-			"attribute"	"dmg taken from crit reduced"
+			"attribute"	"damage force reduction"
 			"icon"		"achievements/tf_soldier_shoot_mult_crits"
-			"increment"	"-0.3"
-			"cap"		"0.1"
+			"increment"	"-0.5"
+			"cap"		"0.5"
 			"cost"		"150"
 		}
 		"5"
