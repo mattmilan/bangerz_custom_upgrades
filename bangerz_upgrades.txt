@@ -486,9 +486,9 @@
 		{
 		    "attribute" "spunup_push_force_immunity"
 			"icon"      "achievements/tf_heavy_block_invuln_heavy"
-			"increment" "1"
+			"increment" "0.25"
 			"cap"       "1"
-			"cost"      "1000"
+			"cost"      "250"
 		}
 	}
 	
