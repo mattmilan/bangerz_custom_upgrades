@@ -525,7 +525,7 @@
 			"attribute"	"damage force reduction"
 			"icon"		"achievements/tf_soldier_shoot_mult_crits"
 			"increment"	"-0.3"
-			"cap"		"0.9"
+			"cap"		"0.3"
 			"cost"		"150"
 		}
 		"5"
