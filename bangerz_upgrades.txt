@@ -484,8 +484,8 @@
 		}
 		"59"
 		{
-		    "attribute" "spunup_push_force_immunity"
-			"icon"      "achievements/tf_heavy_block_invuln_heavy"
+		    "attribute" "bullets per shot bonus"
+			"icon"      "achievements/tf_get_turretkills"
 			"increment" "0.25"
 			"cap"       "1"
 			"cost"      "250"
