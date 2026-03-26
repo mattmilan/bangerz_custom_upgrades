@@ -486,8 +486,8 @@
 		{
 		    "attribute" "bullets per shot bonus"
 			"icon"      "achievements/tf_get_turretkills"
-			"increment" "0.25"
-			"cap"       "1"
+			"increment" "1"
+			"cap"       "5"
 			"cost"      "250"
 		}
 	}
