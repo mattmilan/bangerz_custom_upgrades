@@ -479,7 +479,7 @@
 			"attribute"	"weapon spread bonus"
 			"icon"		"achievements/tf_pyro_double_ko"
 			"increment"	"-0.4"
-			"cap"		"0.8"
+			"cap"		"0.4"
 			"cost"		"100"
 		}
 		"59"
