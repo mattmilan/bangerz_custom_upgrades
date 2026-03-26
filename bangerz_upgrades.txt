@@ -486,8 +486,8 @@
 		{
 		    "attribute" "fuse bonus"
 			"icon"      "achievements/tf_demoman_air_burst_kills"
-			"increment" "1"
-			"cap"       "1"
+			"increment" "0.5"
+			"cap"       "2"
 			"cost"      "5"
 		}
 	}
