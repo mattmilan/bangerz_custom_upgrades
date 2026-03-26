@@ -476,7 +476,7 @@
 		}
 		"58"
 		{
-			"attribute"	"Projectile range increased"
+			"attribute"	"weapon spread bonus"
 			"icon"		"achievements/tf_pyro_double_ko"
 			"increment"	"0.4"
 			"cap"		"2.2"
